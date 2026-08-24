@@ -1,9 +1,4 @@
 
-
-# Assignments
-
----
-
 ### Assignment 1: CLI vs GUI
 
 **Objective:** Understand the difference between CLI and GUI.
@@ -16,7 +11,7 @@
 5. Give 2 examples of GUI and 2 examples of CLI.
 
 **Submission:** Written answers
-<img width="2298" height="3186" alt="image" src="https://github.com/user-attachments/assets/0bd85092-5136-457e-b004-d870c9fddfbe" />
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/d84fd372-cbda-46c0-89f1-704db1572aaf" />
 
 ---
 
@@ -33,7 +28,8 @@
    - VS Code terminal showing Git Bash is selected
 
 **Submission:** Written answers + Screenshots
-<img width="2359" height="928" alt="IMG_20260821_100404" src="https://github.com/user-attachments/assets/d5c8663d-f31f-465a-a15a-9c92f1b8c9aa" />
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/30f3f571-146f-4f2c-b26b-2bfd9f518657" />
+<img width="1291" height="358" alt="image" src="https://github.com/user-attachments/assets/24d485e0-6db9-4300-91cd-1754c7200dfe" />
 
 ---
 
@@ -61,7 +57,8 @@
    - `ls -la`
 
 **Submission:** List of commands used + short answers
-<img width="2311" height="1499" alt="IMG_20260821_100432" src="https://github.com/user-attachments/assets/a21291ba-c5ea-4df2-9beb-75d9b293c872" />
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/ec82ce68-30ff-4c85-8372-18634d5cc15a" />
+<img width="823" height="746" alt="image" src="https://github.com/user-attachments/assets/cd5d180d-d21b-47f4-a685-179fc99a4119" />
 
 ---
 
@@ -87,7 +84,8 @@ Perform the following in Git Bash and write the exact commands:
 - Why should we be careful while using `rm -rf`?
 
 **Submission:** Commands list + answers
-<img width="1920" height="1045" alt="image" src="https://github.com/user-attachments/assets/65b2b2e8-2ee7-4bfe-bd10-ffd331e0cb93" />
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/9293cfdc-06e1-4c96-8722-008e031156f9" />
+<img width="700" height="842" alt="image" src="https://github.com/user-attachments/assets/3ebc02b9-9746-4ec3-ae33-6ff1b05b83bc" />
 
 ---
 
@@ -100,16 +98,16 @@ Perform the following in Git Bash and write the exact commands:
 
 | Command     | Purpose                          |
 |-------------|----------------------------------|
-| `pwd`       | view current directory.          |
-| `ls -la`    | view detailed list with hidden files |
-| `mkdir`     | make a directory.                |
-| `touch`     | create a file.                   |
-| `cat`       | view a file.                     |
-| `mv`        | move a file or folder.           |
-| `rm -r`     | delete non-empty folder.         |
-| `clear`     | clear the terminal window.       |
-| `whoami`    | show current user.               |
-| `history`   | shows all the command used.      |
+| `pwd`       |                                  |
+| `ls -la`    |                                  |
+| `mkdir`     |                                  |
+| `touch`     |                                  |
+| `cat`       |                                  |
+| `mv`        |                                  |
+| `rm -r`     |                                  |
+| `clear`     |                                  |
+| `whoami`    |                                  |
+| `history`   |                                  |
 
 2. Write the correct command for the following actions:
    - Create an empty file
@@ -121,8 +119,9 @@ Perform the following in Git Bash and write the exact commands:
 3. Write **4 key takeaways**
 
 **Submission:** Written answers
-<img width="2213" height="700" alt="IMG_20260821_100458" src="https://github.com/user-attachments/assets/2cc7783c-f592-4e10-8a85-5650cd4bee51" />
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/3a428d45-8f93-488b-a323-70358a203e59" />
+![Uploading image.png…]()
 
 ---
 
-### Deadline : 22nd August, 2026.
+### Deadline : 23rd August, 2026.
