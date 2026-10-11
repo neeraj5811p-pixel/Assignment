@@ -944,6 +944,191 @@ Q-5
 
 
 
+// C] Relational Operator
+5. Greater Than >
+// A student’s marks are 78. The passing marks are 40. Check whether the student has scored more than the passing marks.
+// Temperature today is 35°C and yesterday it was 28°C. Check if today is hotter.
+// Predict the output:
+// console.log(15 > 10);
+// console.log(10 > 15);
+// console.log(10 > 10);
+// Predict the output:
+// console.log("20" > 15);
+// console.log("5" > "10");
+// console.log("abc" > 10);
+// What is the result of null > 0 and undefined > 0? Explain.
+// A shop has 120 items in stock. A customer wants to buy 85 items. Write a condition using > to check if stock is sufficient.
+// Predict and explain:
+// console.log(true > false);
+// console.log("10" > "2");
+// console.log(NaN > 5);
+
+Answers:
+
+Q-1
+let marks = 78;
+let passingMarks = 40;
+console.log("The student is pass=>", marks>passingMarks)
+ 
+Q-2
+ let todayTemperature = 35;
+ let yestardayTemperature = 28;
+ console.log("today is more hotter than yestardayTemperature=>", todayTemperature>yestardayTemperature)
 
 
-   
+Q-3
+console.log(15 > 10);//true
+console.log(10 > 15);//false
+console.log(10 > 10);//false
+
+Q-4
+console.log("20" > 15);//true
+console.log("5" > "10");//false
+console.log("abc" > 10);//false
+
+Q-5
+Because null and undefined are a Nan, so that both they are shown the result false
+
+
+Q-6
+
+let stock =120;
+let buyItems =85;
+console.log("Stock is sufficient=>", stock>buyItems)
+
+Q-7
+console.log(true > false);//true
+console.log("10" > "2");//false
+console.log(NaN > 5);//false
+
+
+6. Less Than <
+// 1. A box can hold maximum 50 kg. Current weight is 42 kg. Check if more items can still be added.
+// 2.Age of a person is 16. Minimum age required is 18. Check if the person is underage.
+// 3.Predict the output:
+// console.log(8 < 12);
+// console.log(20 < 10);
+// console.log(7 < 7);
+// 4.Predict the output:
+// console.log("8" < 10);
+// console.log("20" < "3");
+// console.log("hello" < 5);
+// 5.What is the result of null < 0 and undefined < 0? Explain.
+// 6.A tank capacity is 500 litres. Current water level is 375 litres. Write a condition using < to check if it is not full.
+// 7.Predict and explain:
+// console.log(false < true);
+// console.log("5" < "15");
+// console.log(NaN < 10);
+
+
+Answers:
+Q-1
+let capacity = 50;
+let currentWeight = 42;
+console.log("More items can added =>", capacity>currentWeight)
+
+Q-2
+let capacity = 50;
+let currentWeight = 42;
+console.log("More items can added =>", capacity>currentWeight)
+
+Q-3
+console.log(8 < 12);//true
+console.log(20 < 10);//false
+console.log(7 < 7);//false
+
+Q-4
+console.log(8 < 12);//true
+console.log(20 < 10);//false
+console.log(7 < 7);//false
+
+Q-5
+the result of null < 0 and undefined < 0 is false because both they are a NaN, so that Nan is not greater than 0.
+
+
+Q-6
+let capacity = 500;
+let currentWater = 375;
+console.log("Tank is not full =>", currentWater<capacity)
+
+Q-7
+console.log(false < true);//true
+console.log("5" < "15");//false
+console.log(NaN < 10);//false
+
+
+7. Greater Than or Equal To >=
+//    Minimum marks required for distinction is 75. A student scored 75. Check if the student gets distinction.
+// Ticket price is ₹300. A person has ₹300. Check if they can buy the ticket.
+// Predict the output:
+// console.log(25 >= 25);
+// console.log(30 >= 25);
+// console.log(20 >= 25);
+// Predict the output:
+// console.log("25" >= 25);
+// console.log("10" >= "2");
+// console.log(null >= 0);
+// What is the result of undefined >= 0? Explain.
+// A lift can carry maximum 8 people. Currently 8 people are inside. Write a condition using >= to check if the lift is full or overloaded.
+// Predict and explain:
+// console.log(true >= 1);
+// console.log("" >= 0);
+// console.log(NaN >= NaN);
+
+   Answers:
+Q-1
+let requiredmarks = 75;
+let marks = 75;
+console.log("student is eligible=>",requiredmarks>=marks)
+
+Q-2
+let ticketPrice = 300
+let perTicket = 300;
+console.log("Can a person buuy a ticket =>", ticketPrice>=perTicket)
+
+
+Q-3
+console.log(25 >= 25);//true
+console.log(30 >= 25);//true
+console.log(20 >= 25);//false
+
+
+Q-4
+console.log("25" >= 25);//true
+console.log("10" >= "2");//false
+console.log(null >= 0);//true
+
+
+Q-5
+the result is false because undefined is a NaN
+
+
+Q-6
+let capacity = 8;
+let currentlyPeople = 8;
+console.log("The lift is overloaded or full =>", capacity>=currentlyPeople)
+
+Q-7
+console.log(true >= 1);//true
+console.log("" >= 0);//false
+console.log(NaN >= NaN);//true
+
+
+// 8. Less Than or Equal To <=
+
+// Maximum speed limit is 60 km/h. A vehicle is travelling at 60 km/h. Check if it is within the limit.
+// A student needs at least 40 marks to pass. He scored 39. Check if he has failed.
+// Predict the output:
+// console.log(15 <= 20);
+// console.log(20 <= 15);
+// console.log(15 <= 15);
+// Predict the output:
+// console.log("15" <= 20);
+// console.log("30" <= "5");
+// console.log(null <= 0);
+// What is the result of undefined <= 0? Explain.
+// A bag can hold maximum 10 books. Currently it has 10 books. Write a condition using <= to check if more books can be added.
+// Predict and explain:
+// console.log(false <= 0);
+// console.log("" <= 0);
+// console.log(NaN <= 5);
