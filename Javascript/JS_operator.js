@@ -1132,3 +1132,830 @@ console.log(NaN >= NaN);//true
 // console.log(false <= 0);
 // console.log("" <= 0);
 // console.log(NaN <= 5);
+
+
+
+
+
+
+
+   ### Mixed Practice (>, <, >=, <=)
+1. Write expressions to check:
+   - Whether age `18` is greater than or equal to voting age `18`.
+   - Whether temperature `32` is less than `35`.
+   - Whether score `90` is greater than `85`.
+2. Predict the outputs:
+   ```js
+   console.log(10 > 5 && 5 < 10);
+   console.log("10" >= 10);
+   console.log(null <= undefined);
+   console.log("5" < "10" && 5 > 2);
+   ```
+3. A product costs ₹499. A customer has ₹500. Write conditions using `>=` and `<` to decide if the customer can buy it and if any change will be left.  
+4. Explain why `"10" > "2"` is `false` but `10 > 2` is `true`.
+
+answer==========================================================================================================
+
+
+  
+// Q1.
+// a) 
+console.log(18 >= 18); // true
+
+// b) 
+console.log(32 < 35); // true
+
+// c) 
+console.log(90 > 85); // true
+
+
+// Q2. 
+
+console.log(10 > 5 && 5 < 10);       // true
+console.log("10" >= 10);             // true
+console.log(null <= undefined);      // false
+console.log("5" < "10" && 5 > 2);    // false
+
+
+// Q3. 
+
+let price = 499;
+let money = 500;
+
+
+console.log(money >= price); // true
+
+ 
+console.log(money > price); // true
+
+
+console.log(money - price); // 1
+
+
+// Q4. 
+
+console.log("10" > "2"); // false
+console.log(10 > 2);     // true
+
+reason:
+"10" and "2" are strings, so they are compared
+by ascii value , character by character.
+The first character "1" comes before "2", so false.
+
+10 and 2 are numbers, so their numerical values
+are compared. Since 10 is greater than 2, so it is  true.
+
+   // =============================================================================================================
+
+
+   ## Part E]: Increment / Decrement Operators (`++` / `--`)
+
+### Part a:
+
+1. A counter starts at `5`. Use the increment operator to increase it by 1 and print the new value.  
+2. A player has `3` lives. Use the decrement operator to reduce one life and print the remaining lives.  
+3. Start with `score = 10`. Increase the score using `++` and print it.  
+4. Start with `items = 8`. Decrease the items using `--` and print it.  
+5. Declare `count = 0`. Increment it twice and print the final value.
+// Answers===============================================================================================================
+// q1.
+//    let counter = 5;
+// counter++;
+// console.log(counter);  //6
+
+//    Q2.
+//    let live = 3;
+// live--;
+// console.log(live)   //2
+
+
+//    Q3. 
+//    let score=10;
+// score++;
+// console.log(score)   //11
+
+//    Q4.
+//    let items=8;
+// items--;
+// console.log(items)  //7
+
+// Q5.
+//    let count=0;
+// count++;
+// count++;
+// console.log(count)
+================================================================================================================
+### Part b:
+
+6. Start with `x = 5`.  
+   - Create `y = x++`  
+   - Print both `x` and `y`.  
+   Explain why the values are different.
+
+7. Start with `a = 5`.  
+   - Create `b = ++a`  
+   - Print both `a` and `b`.  
+   Explain the difference from the previous question.
+
+8. Start with `lives = 3`.  
+   - Use post-decrement (`lives--`) and store the result in `previousLives`.  
+   - Print both variables.
+
+9. Start with `attempts = 0`.  
+   - Use pre-increment (`++attempts`) and store the result in `currentAttempts`.  
+   - Print both variables.
+
+10. Start with `points = 100`.  
+    - Increase it using `++`  
+    - Then decrease it using `--`  
+    - Print the final value.
+Answer==============================================================================================
+   Q6.
+let x = 5;
+let y = x++;
+
+console.log(x);
+console.log(y);
+reason==
+   — x starts at 5.
+— first, the current value of x (5) is assigned to y.Then, x increases by 1, becoming 6
+
+Q7.
+   let a = 5;
+let b = ++a;
+
+console.log(a);
+console.log(b);
+
+Q8.
+   let lives = 3;
+let previousLives = lives--;
+
+console.log(lives);
+console.log(previousLives);
+
+Q9.
+   let attempts = 0;
+let currentAttempts = ++attempts;
+
+console.log(attempts);
+console.log(currentAttempts);
+
+Q10.
+   let points = 100;
+
+++points;
+--points;
+
+console.log(points);
+
+==================================================================================================================
+### Part c:
+
+11. Predict the output:
+    ```js
+    let x = 10;
+    let y = x++;
+    let z = ++x;
+    console.log(x, y, z);
+    ```
+
+12. Predict the output:
+    ```js
+    let a = 5;
+    let b = a-- + ++a;
+    console.log(a, b);
+    ```
+
+13. Predict the output:
+    ```js
+    let m = 7;
+    let n = --m + m++;
+    console.log(m, n);
+    ```
+
+14. Predict the output:
+    ```js
+    let p = 3;
+    let q = p++ + ++p + p;
+    console.log(p, q);
+    ```
+
+15. Predict the output:
+    ```js
+    let val = 0;
+    val = val++ + ++val;
+    console.log(val);
+    ```
+
+---
+   Answer=============================================================================================================
+   Q11.
+   
+let x = 10;
+let y = x++;
+let z = ++x;
+console.log(x, y, z); // 12,10,12
+
+
+Q12.
+   let a = 5;
+let b = a-- + ++a;
+console.log(a, b); // 5,10
+
+Q13.
+   let m = 7;
+let n = --m + m++;
+console.log(m, n); // 7,13
+
+   Q14.
+      let p = 3;
+let q = p++ + ++p + p;
+console.log(p, q);   // 5,13
+
+Q15.
+   let val = 0;
+val = val++ + ++val;
+console.log(val);    //2
+
+ // ==================================================================================================================
+    ## Part F]: Logical Operators
+
+***
+
+### 1. Logical AND `&&`
+
+Write a JavaScript program for each:
+
+1. Stored username is `"admin"` and password is `1234`. Check if both are valid using `&&` and print the result.  
+2. A user is logged in (`isLoggedIn = true`) and has permission (`hasPermission = true`). Check if they can access a page using `&&`.  
+3. A product is in stock (`inStock = true`) and its price is less than ₹1000 (`price = 800`). Check if it can be bought using `&&`.  
+4. A student has marks `75` and attendance `80`. Passing requires marks greater than `65` **and** attendance greater than `70`. Check using `&&`.  
+5. Two conditions: `isWeekend = true` and `isHoliday = false`. A party happens only if both are true. Check using `&&`.
+// Answers===========================================================================================
+   
+// Q1.
+//    let username = "admin";
+// let password = 1234;
+// console.log(username === "admin" && password === 1234);   //true
+
+   Q@
+let isLoggedIn=true;
+let hasPermission=true;
+let isAccess=isLoggedIn && hasPermission
+console.log(isAccess)  // teur
+
+Q3.
+   let inStock=true;
+let price=800;
+let canBought=inStock&&(price>=1000);
+console.log(canBought);  // false
+
+Q4
+let marks = 75;
+let attendance = 80;
+
+console.log(marks > 65 && attendance > 70);  //true
+
+
+Q5.
+   let isWeekend = true;
+let isHoliday = false;
+
+console.log(isWeekend && isHoliday); //false
+
+// ==============================================================================================================
+
+### Additional Questions (Logical AND `&&`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = 10;
+   let result = a && b;
+   console.log(result);  ===>>>>>>> 0
+   ```
+
+7. Predict the output:
+   ```js
+   let x = 5;
+   let y = 10;
+   let result = (x > 3 && y) || 0;
+   console.log(result);  =========>>>> 10
+   ```
+
+8. Predict the output:
+   ```js
+   let p = "Hello";
+   let q = "";
+   let r = "World";
+   let result = p && q && r;
+   console.log(result);   ==========>>>>>>>>""
+   ```
+
+9. Predict the output:
+   ```js
+   let val = 5;
+   let condition = val && (val = 0);
+   console.log(condition); ===========>>>> 0
+   console.log(val);    ===========>>>> 0
+   ```
+
+10. Predict the output:
+    ```js
+    let x = 10;
+    let y = 20;
+    let result = (x && y) && (x > y);
+    console.log(result);   ========>>>>> false
+    ```
+
+***
+// =================================================================================================================
+### 2. Logical OR `||`
+
+Write a JavaScript program for each:
+
+1. A user can login with either a correct password (`passwordCorrect = true`) or a valid OTP (`otpValid = false`). Check if login is allowed using `||`.  
+2. A discount applies if the user is a member (`isMember = false`) or has a coupon (`hasCoupon = true`). Check using `||`.  
+3. Entry is allowed if age is above `18` (`age = 16`) **or** height is above `150` cm (`height = 155`). Check using `||`.  
+4. A form is valid if either email is given (`emailGiven = true`) or phone is given (`phoneGiven = false`). Check using `||`.  
+5. A game level opens if score is above `1000` (`score = 900`) **or** time bonus is collected (`timeBonus = true`). Check using `||`.
+
+// =============================================================================================================
+Q1.
+   let passwordCorrect = true;
+let otpValid = false;
+
+console.log(passwordCorrect || otpValid);  // true
+Q2.
+   let isMember = false;
+let hasCoupon = true;
+let isDiscountApplied=isMember||hasCoupon;
+console.log(isDiscountApplied)       // true
+
+Q3.
+   let age = 16;
+let height = 155;
+
+console.log(age > 18 || height > 150); //true
+
+Q4.
+   
+   let emailGiven = true;
+let phoneGiven = false;
+
+console.log(emailGiven || phoneGiven);
+
+q5
+let score = 900;
+let timeBonus = true;
+
+console.log(score > 1000 || timeBonus);
+
+// =================================================================================================================
+
+### Additional Questions (Logical OR `||`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = false;
+   let c = "";
+   let d = null;
+   let e = 42;
+   let result = a || b || c || d || e;
+   console.log(result);    ===============>>>>>>>>> 42
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "Hello" || 0;
+   let y = 0 || "Hi";
+   console.log(x, y); ============>>>>>>>> hello hi
+   ```
+
+8. Predict the output:
+   ```js
+   let a = 10;
+   let b = 20;
+   let result = (a < 5) || (b > 15);
+   console.log(result); ============>>>>>> true
+   ```
+
+9. Predict the output:
+   ```js
+   let val = 5;
+   let condition = val || (val = 0);
+   console.log(condition);============>>>>>> 5
+   console.log(val);==========>>>>>>>>>>>> 5
+   ```
+
+10. Predict the output:
+    ```js
+    let x = "" || 0 || false || null || undefined || "OK";
+    console.log(x);============>>>>>> OK
+    ```
+
+***
+
+// ============================================================================================================
+
+      ### 3. Logical NOT `!`
+
+Write a JavaScript program for each:
+
+1. A user is not banned (`isBanned = false`). Check if they can login by negating `isBanned` using `!`.  
+2. A task is not completed (`isCompleted = false`). Check if it is still pending using `!`.  
+3. A light is on (`isOn = true`). Check if it is off using `!`.  
+4. A subscription is not active (`isActive = false`). Check if the user cannot access premium content using `!`.  
+5. A file is not read‑only (`isReadOnly = false`). Check if it can be edited using `!`.
+
+   // ==========================================================================================================
+
+   Q1.
+   let isBanned = false;
+
+console.log(!isBanned);  ===>. true
+
+Q2.
+   let isCompleted = false;
+console.log(!isCompleted);
+q3.
+   
+let isOn = true;
+
+console.log(!isOn);
+
+q4.
+   let isActive = false;
+
+console.log(!isActive);
+
+Q5.
+   let isReadOnly = false;
+
+console.log(!isReadOnly);
+
+// ==============================================================================================================
+### Additional Questions (Logical NOT `!`)
+
+6. Predict the output:
+   ```js
+   let a = 0;
+   let b = 1;
+   console.log(!a, !b);   =======>>>>>> true false
+   ```
+
+7. Predict the output:
+   ```js
+   let x = "Hello";
+   let y = "";
+   console.log(!x, !y);  ============>>>>>>>>> false true
+   ```
+
+8. Predict the output:
+   ```js
+   let val = 5;
+   let result = !val;
+   console.log(result); ==========>>>>>>>>>false
+   ```
+
+9. Predict the output:
+   ```js
+   let a = 10;
+   let b = 20;
+   let result = !(a && b);
+   console.log(result);  ===========>>>>>>>>>false
+   ```
+
+10. Predict the output:
+    ```js
+    let x = 0;
+    let y = 1;
+    let result = !(x || y);
+    console.log(result);   ==========>>>>>>false
+    ```
+
+***
+// ===========================================================================================================
+
+       ## Part G]: `typeof` Operator
+----
+### Part a: 
+
+1. Declare a variable `name = "Rahul"` and print its type using `typeof`.  
+2. Declare a variable `age = 25` and print its type.  
+3. Declare a variable `isStudent = true` and print its type.  
+4. Declare a variable `city` (without assigning a value) and print its type.  
+5. Print the type of the value `null`.
+
+  // Answer================================================================================================
+q1.
+   let name="Rahul";
+console.log(typeof(name)); // string
+// Q2
+let age = 25;
+console.log(typeof age); // number
+
+// Q3
+let isStudent = true;
+console.log(typeof isStudent); // boolean
+
+// Q4
+let city;
+console.log(typeof city); // undefined
+
+// Q5
+console.log(typeof null); // object
+// ===================================================================================================
+
+### Part b:
+
+6. Predict the output:
+   ```js
+   console.log(typeof 42);  ====>>>. number
+   console.log(typeof "Hello");   =============>>>> string
+   console.log(typeof true);============>>>>>>> boolean
+   console.log(typeof undefined); =======>>> undefined
+   ```
+
+7. Predict the output:
+   ```js
+   console.log(typeof null); =======>>>> object
+   console.log(typeof {});  =====>>> object
+   console.log(typeof []);  ====>>> object
+   ```
+
+8. Predict the output:
+   ```js
+   console.log(typeof NaN);  =====>>>> number
+   console.log(typeof Infinity); ===>>> number
+   console.log(typeof function(){});===>>> function
+   ```
+
+9. Create three variables:
+   - `price = 99.99`  ====>>>> number
+   - `message = "Welcome"`===>>> string
+   - `isActive = false`  ===>>> boolean
+   Print the type of each variable with a clear message.
+
+10. Predict the output:
+    ```js
+    let value = null; 
+    console.log(typeof value);===>>>> object
+    console.log(typeof value === "object"); truee
+    ```
+// ===========================================================================================================
+
+### Part c:
+
+11. Predict the output:
+    ```js
+    console.log(typeof typeof 100);===>>> string
+    console.log(typeof typeof "Hi");====>>> string
+    console.log(typeof typeof true);====>>> string
+    ```
+
+12. Predict the output:
+    ```js
+    let a = 10;
+    let b = "10";
+    console.log(typeof a === typeof b);   // false
+    console.log(typeof a == typeof b);     // true
+    ```
+
+13. Predict the output:
+    ```js
+    console.log(typeof null === "object");====>>> true
+    console.log(typeof [] === "object");===>>> true
+    console.log(typeof {} === "object");====>>>> true
+    ```
+
+14. Predict the output:
+    ```js
+    let x;
+    console.log(typeof x);  // undefined
+    x = null;
+    console.log(typeof x);  ===>> object
+    x = 0;
+    console.log(typeof x);===>> number
+    ```
+
+15. Predict the output:
+    ```js
+    console.log(typeof NaN === "number");  ===>> false
+    console.log(typeof Infinity === "number");===>>> true
+    console.log(typeof (1 / 0));===>>> number
+    ```
+
+---
+// =====================================================================================
+  ## Part H]: Type Coercion
+
+### Part a:
+
+1. Convert the string `"25"` into a number using `Number()` and add `10` to it. Print the result.  
+2. Convert the number `100` into a string using `String()` and join it with `" rupees"`. Print the result.  
+3. Convert the value `0` into a boolean using `Boolean()` and print it.  
+4. Convert the value `"Hello"` into a boolean and print it.  
+5. Use the unary `+` operator to convert `"50"` into a number and multiply it by `2`
+// =====================================================================================================
+
+let string="25";
+let y=Number(string);
+console.log(y+10)
+// q2.
+   let number=100;
+let y=String(number);
+console.log(y+"rupees")
+// Q3
+let c = Boolean(0);
+console.log(c); // false
+
+// Q4
+let d = Boolean("Hello");
+console.log(d); // true
+
+// Q5
+let e = +"50";
+console.log(e * 2); // 100\
+
+// ============================================================================================
+
+### Part b:
+
+6. Predict the output:
+   ```js
+   console.log("10" - 5);  //5
+   console.log("10" + 5);   //105
+   console.log("10" * 2); //20
+   console.log("10" / 2);  //5
+   ```
+
+7. Predict the output:
+   ```js
+   console.log("5" - "2");  // 3
+   console.log("5" + "2");   //52
+   console.log("5" * "2");   //10
+   console.log("5" / "2");   //2.5
+   ```
+
+8. Predict the output:
+   ```js
+   console.log(Number("123"));  // 123
+   console.log(Number("123abc"));  //NaN
+   console.log(Number(true));  // 1
+   console.log(Number(false));  //0
+   console.log(Number(null));   // 0
+   console.log(Number(undefined)); // NaN
+   ```
+
+9. Predict the output:
+   ```js
+   console.log(Boolean(0));  // false
+   console.log(Boolean(""));  //false
+   console.log(Boolean("0")); // true
+   console.log(Boolean([])); //true
+   console.log(Boolean({})); //true
+   console.log(Boolean(null)); // false
+   ```
+
+10. Predict the output:
+    ```js
+    console.log(String(100));   // 100
+    console.log(String(true)); // true
+    console.log(String(null)); // null
+    console.log(String(undefined)); //undefined
+    console.log(100 + "");  // 100
+    ```
+
+// =======================================================================================================
+
+### Part c:
+
+11. Predict the output:
+    ```js
+    console.log("5" + 3 + 2);  //532
+    console.log(5 + 3 + "2"); // 82
+    console.log("5" - 3 + 2);  // 4
+    console.log(5 - "3" + "2"); //22
+    ```
+
+12. Predict the output:
+    ```js
+    console.log(true + true);  // 2
+    console.log(true + false);   // 1
+    console.log(true + "false");  // truefalse
+    console.log(false + "true");   //falsetrue
+    ```
+
+13. Predict the output:
+    ```js
+    console.log(null + 5);   // 5
+    console.log(undefined + 5);  // NaN
+    console.log(null + "5");   // null5
+    console.log(undefined + "5");  // undefined5
+    ```
+
+14. Predict the output:
+    ```js
+    console.log([] + []); // empty
+    console.log([] + {});  [object object]
+    console.log({} + []);  [object object]
+    console.log({} + {});  [object object][object object]
+    ```
+
+15. Predict the output:
+    ```js
+    let a = "10";
+    let b = 5;
+    let c = a + b;
+    let d = a - b;
+    let e = +a + b;
+    console.log(c, typeof c);  // 105 string
+    console.log(d, typeof d);   // 5 number
+    // console.log(e, typeof e);   // 15 number                                                   ********
+    ```
+
+16. Predict the output:
+    ```js
+    console.log(!!"Hello");  // true
+    console.log(!!"");     //false
+    console.log(!!0);    // false
+    console.log(!!1);  // true
+    console.log(!!null);   // false
+    console.log(!!undefined);   // false
+    ```
+
+17. Predict the output:
+    ```js
+    console.log(Number(""));   // 0
+    console.log(Number(" "));  //0
+    console.log(Number("0"));  //0
+    console.log(Number("  25  "));  // 25
+    console.log(Number("25px"));  //NaN
+    ```
+
+18. Predict the output:
+    ```js
+    let val1 = "5";  // 
+    let val2 = 2;
+    console.log(val1 + val2);  // 52
+    console.log(+val1 + val2);  // 7
+    console.log(val1 - val2);  // 3
+    console.log(val1 * val2);  //10
+    console.log(val1 / val2);  //2.5
+    ```
+
+---
+
+   // =====================================================================================================
+
+   # Bonus Mixed Practice Questions:
+
+19. Predict the output:
+    ```js
+    let count = 5;
+    console.log(typeof count++);   number
+    console.log(count);     // 6
+    console.log(typeof ++count);   // number
+    console.log(count); 7
+    ```
+
+20. Predict the output:
+    ```js
+    let x = "10";   // 
+    let y = ++x;
+    console.log(x, y, typeof x, typeof y);   // 11,11. number, number
+    ```
+
+21. Predict the output:
+    ```js
+    let a = "5";   
+    let b = a++;
+    console.log(a, b, typeof a, typeof b);   // 6 5 number number
+    ```
+
+22. Predict the output:
+    ```js
+    console.log(typeof (1 + "2"));  // 3
+    console.log(typeof (1 - "2"));  // -1
+    console.log(typeof (1 * "2"));  // 2
+    console.log(typeof (1 / "2"));  //0.5
+    ```
+
+23. Predict the output:
+    ```js
+    let val = null;
+    console.log(typeof val);   // object
+    console.log(val + 1);      // 1
+    console.log(val - 1);    // -1
+    console.log(val * 1);   // 0
+    console.log(Boolean(val));   // false
+    ```
+
+---
+
+   // =========================================================================================
+
+   
